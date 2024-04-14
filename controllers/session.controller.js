@@ -1,0 +1,1 @@
+// Manages user sessions, such as creating and destroying sessions.

@@ -1,0 +1,1 @@
+// Handles user-related actions such as user registration (sign up), user authentication (login), and user logout.

@@ -1,0 +1,1 @@
+// Represents user data, including fields such as username, password (hashed), role (mentor or mentee), and availability (for mentors).

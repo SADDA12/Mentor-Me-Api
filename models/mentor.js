@@ -1,1 +1,0 @@
-// Extends the User model with additional fields specific to mentors, such as expertise, availability schedule, etc.

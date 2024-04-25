@@ -7,4 +7,4 @@ const MenteeSchema = new Schema({
     password: {type: String, required: true}
 })
 
-export const menteeUserModel = model("Mentee", MenteeSchema, "mentees")
+export const menteeUserModel = model("Mentee", MenteeSchema, "user_mentee")

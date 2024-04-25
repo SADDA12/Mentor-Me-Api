@@ -11,7 +11,7 @@ async function compare( userPassword, hashedPassword) {
     return res
 }
 
-export const menteeController = async(req, res, next) => {
+export const registerMentee = async(req, res, next) => {
     try {
         const data = req.body;
 

@@ -6,7 +6,7 @@ const MentorSchema = new Schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
     phoneNumber: {type: Number, required: true},
-    pronuouns: {type: String, required: true},
+    pronouns: {type: String, required: true},
     linkedinUrl: {type: String, required: true},
     currentEmployer: {type: String, required: true},
     currentEmployerWebsite: {type: String, required: true},
@@ -16,6 +16,8 @@ const MentorSchema = new Schema({
     careerStage: {type: String, required: true},
     skills: {type: String, required: true},
     reason: {type: String, required: true},
+    availabilityStartTime: {type: String, required: true},
+    availabilityEndTime: {type: String, required: true},
 })
 
-export const mentorUserModel = model("Mentor", MentorSchema, "mentors")
+export const mentorUserModel = model("Mentor", MentorSchema, "user_mentor")

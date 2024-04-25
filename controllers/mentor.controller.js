@@ -20,8 +20,7 @@ export const registerMentor = async (req, res, next) => {
 
     const user = await mentorUserModel.findOne({ email: data.email });
     if (!user) {
-      const { firstName, lastName, email, phoneNumber, pronouns, linkedinUrl, currentEmployer,
- currentEmployerWebsite, currentJobTitle, location, sector, careerStage, skills, reason, availabilityStartTime,
+      const { firstName, lastName, email, phoneNumber, currentJobTitle, location, sector, careerStage, skills, availabilityStartTime,
         availabilityEndTime, } = await mentorUserModel.create({
         ...data,
         password: hashedPassword,
@@ -31,16 +30,11 @@ export const registerMentor = async (req, res, next) => {
         lastName,
         email,
         phoneNumber,
-        pronouns,
-        linkedinUrl,
-        currentEmployer,
-        currentEmployerWebsite,
         currentJobTitle,
         location,
         sector,
         careerStage,
         skills,
-        reason,
         availabilityStartTime,
         availabilityEndTime,
       });
